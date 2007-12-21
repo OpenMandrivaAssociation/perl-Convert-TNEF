@@ -11,6 +11,7 @@ Group: 		Development/Perl
 Source: 	%{module}-%{version}.tar.bz2
 URL: 		http://www.cpan.org/modules/by-module/Convert/
 BuildRequires:	perl-devel perl-MIME-tools
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: 	perl
 Summary:	%{module} module for perl
 BuildArch:	noarch
