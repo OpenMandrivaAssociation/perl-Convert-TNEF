@@ -1,7 +1,7 @@
 %define	module	Convert-TNEF
 %define	name	perl-%{module}
 %define version	0.17
-%define release	%mkrel 6
+%define release	%mkrel 7
 
 Name: 		%{name}
 Version: 	%{version}
