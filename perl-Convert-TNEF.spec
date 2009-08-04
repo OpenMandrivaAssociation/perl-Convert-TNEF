@@ -1,26 +1,25 @@
-%define	module	Convert-TNEF
-%define	name	perl-%{module}
-%define version	0.17
-%define release	%mkrel 8
+%define	upstream_name	 Convert-TNEF
+%define upstream_version 0.17
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	%{upstream_name} module for perl
 License: 	GPL
 Group: 		Development/Perl
-Source: 	%{module}-%{version}.tar.bz2
-URL: 		http://www.cpan.org/modules/by-module/Convert/
-BuildRequires:	perl-devel perl-MIME-tools
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires: 	perl
-Summary:	%{module} module for perl
+Url: 		http://www.cpan.org/modules/by-module/Convert/
+Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+
+BuildRequires:	perl-MIME-tools
 BuildArch:	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
-%{module} module for perl
+%{upstream_name} module for perl
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -39,5 +38,3 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Convert/*
 %{_mandir}/*/*
 %doc MANIFEST README Changes
-
-
