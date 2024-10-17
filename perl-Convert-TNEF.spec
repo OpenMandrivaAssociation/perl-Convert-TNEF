@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	18
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://www.cpan.org/modules/by-module/Convert/
+Url:		https://www.cpan.org/modules/by-module/Convert/
 Source0:	%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	perl-MIME-tools
