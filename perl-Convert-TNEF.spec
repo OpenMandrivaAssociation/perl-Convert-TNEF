@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://www.cpan.org/modules/by-module/Convert/
 Source0:	%{modname}-%{modver}.tar.bz2
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-MIME-tools
 BuildRequires:	perl-devel
 
