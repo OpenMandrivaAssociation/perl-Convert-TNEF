@@ -1,14 +1,14 @@
 %define	modname	Convert-TNEF
-%define modver	0.17
+%define modver	0.18
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	18
+Version:	%{modver}
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://www.cpan.org/modules/by-module/Convert/
-Source0:	%{modname}-%{modver}.tar.bz2
+Url:		https://metacpan.org/dist/Convert-TNEF
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOUGW/Convert-TNEF-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-MIME-tools
